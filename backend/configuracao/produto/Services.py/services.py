@@ -7,7 +7,10 @@ class ProductsService:
     @staticmethod
     def listarProduto():
         return Produto.objects.all()
-
+    @staticmethod
+    def obterProduto(product_id):
+        return get_object_or_404(Produto, id=product_id)
+    
 
         
 
