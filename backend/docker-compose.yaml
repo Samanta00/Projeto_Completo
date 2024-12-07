@@ -1,0 +1,12 @@
+
+services:
+  dev-beckend:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - "./configuracao:/src"
+    ports:
+      - "8000:8000"
+      - "4000:4000"
+  
